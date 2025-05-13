@@ -8,13 +8,17 @@
 }
 
 @theme {
+
+  --font-allerta:"Allerta Stencil", "sans-serif";
+
   --color-light-blue: #E1E2EB;  /* Ghost White */
   --color-dark-blue: #040E66;   /* Federal Blue */
   --color-medium-blue: #162ADE; /* Palatinate Blue */
   --color-soft-blue: #9CA4F0;   /* Vista Blue */
 }
 
-
+/* this is the link of website which i take assets from thier 
+https://demo2.wpthemego.com/themes/sw_xtore13/ */
 
 /* 
 color codes

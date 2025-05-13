@@ -24,7 +24,7 @@ const Topbar = () => {
               <LuLinkedin className='h-5 w-5' />
             </a>
           </div>
-          <div className="text-sm text-center flex-grow">
+          <div className="text-sm text-center flex-grow font-allerta">
             <span>We ship all over Pakistan - Fast and relaible shipping</span>
           </div>
           <div className="text-sm hidden md:block">
