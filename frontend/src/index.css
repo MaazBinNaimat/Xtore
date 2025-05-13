@@ -1,5 +1,20 @@
 @import "tailwindcss";
 
+#root{
+    font-family: "Share Tech", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+@theme {
+  --color-light-blue: #E1E2EB;  /* Ghost White */
+  --color-dark-blue: #040E66;   /* Federal Blue */
+  --color-medium-blue: #162ADE; /* Palatinate Blue */
+  --color-soft-blue: #9CA4F0;   /* Vista Blue */
+}
+
+
 
 /* 
 color codes
