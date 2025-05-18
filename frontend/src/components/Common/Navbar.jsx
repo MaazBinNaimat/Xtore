@@ -63,7 +63,7 @@ const Navbar = () => {
                 </div>
                 <div className="p-4">
                     <h2 className='text-xl font-semibold mb-4 font-allerta'>Menu</h2>
-                    <nav>
+                    <nav className='space-y-4'>
                         <Link to="#" onClick={toggleCartDrawer} className='block text-medium-blue hover:text-dark-blue transition-all duration-100'>
                             Home
                         </Link>
