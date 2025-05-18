@@ -1,15 +1,20 @@
 import React from 'react'
 import Header from '../Common/Header'
 import Footer from '../Common/Footer'
+import { Outlet } from 'react-router-dom'
 
 const UserLayout = () => {
   return (
     <>
-    {/* header */}
+    {/* Header */}
     <Header/>
+
     {/* main content */}
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam sit animi optio est commodi harum odio amet veniam? Ducimus maiores reprehenderit incidunt vitae vel consequatur odio error. Maxime, at iste.
-    {/* footer */}
+    <main>
+      <Outlet />
+    </main>
+
+    {/* Footer */}
     <Footer />
     </>
   )

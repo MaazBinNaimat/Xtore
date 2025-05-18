@@ -11,10 +11,14 @@ const App = () => {
     <>
       <Router>
         <Routes>
-          {/* User Layout */}
-          <Route path='/' element={<UserLayout/>} />
-          {/* Admin Layout */}
-          {/* <Route path='/' element={<UserLayout/>} /> */}
+          <Route path='/' element={<UserLayout />} >
+            {/* User Layout */}
+            <Route index element={<Home />}/>
+          </Route>
+          {/* --- */}
+          <Route>
+            {/* Admin Layout */}
+          </Route>
         </Routes>
 
         {/* these are for vercel for chaking speed and insights */}
