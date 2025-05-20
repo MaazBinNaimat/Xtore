@@ -4,6 +4,7 @@ import { HiOutlineUser, HiOutlineShoppingBag, HiBars3BottomRight } from 'react-i
 import SearchBar from './SearchBar'
 import CartDrawer from '../Layout/CartDrawer'
 import { IoMdClose } from 'react-icons/io'
+import mainlogo from "../../assets/mainlogo.png"
 
 const Navbar = () => {
     const [DrwerOpen, setDrwerOpen] = useState(false)
@@ -21,7 +22,7 @@ const Navbar = () => {
             <nav className='container mx-auto flex items-center justify-between py-4 px-6'>
                 {/* logo */}
                 <Link to="/" className='text-3xl font-medium font-allerta text-dark-blue' >
-                    Xtore
+                    <img src={mainlogo} alt="" className='w-[114px]'/>
                 </Link>
                 {/* naigations */}
                 <div className="hidden md:flex space-x-6">
