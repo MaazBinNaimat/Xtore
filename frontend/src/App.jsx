@@ -4,12 +4,15 @@ import { Analytics } from '@vercel/analytics/react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import UserLayout from './components/Layout/UserLayout';
+import { Toaster } from "sonner";
 
 
 const App = () => {
+  
   return (
     <>
       <Router>
+        <Toaster position="top-center"/>
         <Routes>
           <Route path='/' element={<UserLayout />} >
             {/* User Layout */}
