@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { toast } from 'sonner';
+import ProductGrid from "./ProductGrid";
 
 const selectedProduct = {
     name: "Saiful Malook",
@@ -22,6 +23,41 @@ const selectedProduct = {
     ]
 
 }
+
+const similarProducts = [
+    {
+        _id: 1,
+        name: "Dauntless",
+        price: "590",
+        image: [{
+            url: "https://scentsnstories.pk/cdn/shop/files/Dauntlesscopy_18_11zon.webp?v=1735758176&width=720",
+        }]
+    },
+    {
+        _id: 2,
+        name: "Da Vinci Code",
+        price: "650",
+        image: [{
+            url: "https://scentsnstories.pk/cdn/shop/files/DaVanciCodecopy_15_11zon.webp?v=1735758134&width=720",
+        }]
+    },
+    {
+        _id: 3,
+        name: "In My Dreams",
+        price: "590",
+        image: [{
+            url: "https://scentsnstories.pk/cdn/shop/files/In_My_Dreams_Display_Image.webp?v=1746618361&width=720",
+        }]
+    },
+    {
+        _id: 4,
+        name: "Inferno",
+        price: "390",
+        image: [{
+            url: "https://scentsnstories.pk/cdn/shop/files/inferno_29_11zon.webp?v=1735758172&width=720",
+        }]
+    }
+]
 
 const ProductDetails = () => {
 
@@ -156,6 +192,12 @@ const ProductDetails = () => {
 
                             </div>
                         </div>
+                    </div>
+                    <div className="mt-20">
+                        <h2 className='text-2xl text-center font-medium mb-4'>
+                            You May Also Like
+                        </h2>
+                        <ProductGrid products={similarProducts} />
                     </div>
                 </div>
             </div>
